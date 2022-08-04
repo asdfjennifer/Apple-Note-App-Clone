@@ -1,38 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
+  padding: 10vh 20%;
+}
+
+main {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  color: #D7D7D7;
+  /* border: 1px solid #565656; */
+  height: 70vh;
+  /* border-radius: 0 0 20px 20px; */
+}
+
+
+/* ==================================
+  NAVBAR + SUBMIT
+===================================== */
+.nav {
+  background: #232323;
+  display: flex;
+  height: 7vh;
+  justify-content: flex-end;
+  padding: 0.5%;
+  border-radius: 20px 20px 0 0;
+  border-bottom: 1px solid #565656;
+}
+
+.searchbar {
+  background: none;
+  border: 1px solid #565656;
+  border-radius: 8px;
+  color: #565656;
+  font-size: 1em;
+  margin-right: 2%;
+  padding: 0 1%;
+}
+
+.searchSubmit {
+  /* margin-right: 10%; */
+}
+
+input[type="submit"] {
+  background: none;
+  border: 1px solid #565656;
+  border-radius: 8px;
+  color: #565656;
+  font-size: 2em;
+  margin-right: 2%;
+  padding: 0 1%;
+}
+
+input[type="submit"]:hover {
+  opacity: 0.5;
+}
+
+/* ==================================
+ANZEIGE NEUE NOTIZEN / LINKES DIV
+===================================== */
+
+.linkesDiv {
+  flex-basis: 50%;
+  background: #272727;
+  /* height: 100vh; */
+  border-right: 1px solid #565656;
+  border-radius: 0 0 0 20px;
+  overflow: auto;
+}
+
+#bubble {
+  background: #232323;
+  width: 40%;
+  padding: 5%;
+  margin: 5%;
+  border-radius: 10px;
+  line-height: 1.5em;
+  overflow: auto;
+}
+
+#output {}
+
+#dateOutput {
+  font-size: 10px;
+  margin-top: 2vh;
+  justify-content: flex-end;
+}
+
+/* ==================================
+  EINGABEFELD / RECHTES DIV
+===================================== */
+.rechtesDiv {
+  flex-basis: 50%;
+  background: #232323;
+  padding: 2%;
+  border-radius: 0 0 20px 0;
+}
+
+h1 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.eingabefeld {
+  font-family: Arial, Helvetica, sans-serif;
+  background: none;
+  border: none;
+  height: 90%;
+  width: 100%;
+  cursor: auto;
+  color: #fff;
+  font-size: 20px;
+  resize: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* not working */
+input[type="text"]:active {
+  border: none;
 }
