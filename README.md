@@ -22,6 +22,11 @@ Design könnt Ihr euch wie immer selbst überlegen 🤡 (Clone von Apple Notes)
 ----Note2
 ----Note3 
 
+Ergebnis: 
+
 Bonus:
 - Privatisierte Notes ( benötigt Passwort um zu öffnen )
 - User Login mit Authentication (Private Notes zu sharen an andere User)
+
+
+![Bildschirmfoto 2022-08-04 um 02 27 36](https://user-images.githubusercontent.com/98667941/182737665-f4a47312-0fb9-420d-a273-413aaf5a3b40.png)
